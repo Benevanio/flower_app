@@ -1,16 +1,94 @@
-# flower_app1
+### README
 
-A new Flutter project.
+# Simulação de Flor 🌸
 
-## Getting Started
+Este projeto é um aplicativo Flutter simples que simula uma flor interativa. Cada pétala da flor muda de cor aleatoriamente ao ser clicada, proporcionando uma experiência visual dinâmica e divertida.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Funcionalidades
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Uma flor composta por seis pétalas interativas.
+- Cores das pétalas mudam aleatoriamente ao serem clicadas.
+- Design simples e intuitivo, com um núcleo amarelo representando o centro da flor.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Dart**: Linguagem de programação.
+- **Flutter**: Framework para criação de interfaces gráficas multiplataforma.
+
+---
+
+## 📋 Requisitos do Sistema
+
+- Flutter SDK instalado.
+- Dart configurado no ambiente de desenvolvimento.
+- Um emulador ou dispositivo físico para executar o aplicativo.
+
+---
+
+## 📦 Como Executar o Projeto
+
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/Benevanio/flower_app
+   ```
+
+2. **Acesse o diretório do projeto**:
+   ```bash
+   cd simulacao-flor
+   ```
+
+3. **Instale as dependências**:
+   ```bash
+   flutter pub get
+   ```
+
+4. **Execute o aplicativo**:
+   ```bash
+   flutter run
+   ```
+
+---
+
+## 🖼️ Interface do Usuário
+
+### 1. **Tela Inicial**
+- Exibe uma flor com pétalas coloridas.
+- Clicar em qualquer pétala gera uma nova cor aleatória para ela.
+
+---
+
+## 🧩 Estrutura do Código
+
+### Principais Componentes:
+
+- **`FlowerApp`**: O widget principal do aplicativo.
+- **`FlowerPage`**: Página que contém o título e o widget da flor.
+- **`FlowerWidget`**: Contém a lógica da flor interativa e o centro da flor.
+- **`Petal`**: Representa uma pétala individual que muda de cor ao ser clicada.
+
+---
+
+## ✨ Personalização
+
+Você pode personalizar:
+- **Número de pétalas**: Altere o valor no loop `for (int i = 0; i < 6; i++)` dentro do `FlowerWidget`.
+- **Dimensões da pétala**: Ajuste `height` e `width` na classe `Petal`.
+- **Cores iniciais**: Adapte o método `_randomColor()` na classe `_FlowerWidgetState`.
+
+---
+
+## 📝 Licença
+
+Este projeto é de código aberto e está disponível sob a licença [MIT](https://opensource.org/licenses/MIT).
+
+---
+
+## 💡 Ideias de Expansão
+
+- Adicionar animações para a mudança de cor.
+- Permitir diferentes formas de pétalas.
+- Criar diferentes tipos de flores com layouts variados.
